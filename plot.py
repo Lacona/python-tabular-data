@@ -12,6 +12,7 @@ if __name__ == '__main__':
     iris = pd.read_csv("iris.csv")
 
 # create the scatterplots with regression line    
+# Explanation of the commands: hue = from which variable the groups are defined, x and y define the variables for the x and y axis, ci = this option adds a confidence interval, height changes the size of the output, x/ylabel = label x/y axis,title = adds a titel, show = the output is shown but not saved, savefig = figure is saved  
     sns.set_style("whitegrid")
     sns.lmplot(data=iris, hue="species", x="petal_length_cm", y="sepal_length_cm", ci=None, height=6)
     plt.xlabel("Pengulin")
