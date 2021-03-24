@@ -1,21 +1,21 @@
 #! /usr/bin/env python3
 
-#if __name__ == '__main__':
+if __name__ == '__main__':
 
 # import dataset and packages 
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from scipy import stats
-iris = pd.read_csv("iris.csv")
-
-sns.set_style("whitegrid")
-sns.lmplot(data=iris, hue="species", x="petal_length_cm", y="sepal_length_cm", ci=None, height=6)
-plt.xlabel("Pengulin")
-plt.ylabel("Dodo")
-plt.xlim(0,8)
-plt.title("Scatterplots with regression line")
-plt.show()
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    from scipy import stats
+    iris = pd.read_csv("iris.csv")
+    
+    sns.set_style("whitegrid")
+    sns.lmplot(data=iris, hue="species", x="petal_length_cm", y="sepal_length_cm", ci=None, height=6)
+    plt.xlabel("Pengulin")
+    plt.ylabel("Dodo")
+    plt.xlim(0,8)
+    plt.title("Scatterplots with regression line")
+    plt.show()
 
 # subsetting into different dataframes:
 #def subset(dataframe, list_of_species):
