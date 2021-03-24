@@ -2,20 +2,26 @@
 
 if __name__ == '__main__':
 
-# import dataset and packages 
+# import packages 
     import pandas as pd
     import matplotlib.pyplot as plt
     import seaborn as sns
     from scipy import stats
+
+# import dataset
     iris = pd.read_csv("iris.csv")
-    
+
+# create the scatterplots with regression line    
     sns.set_style("whitegrid")
     sns.lmplot(data=iris, hue="species", x="petal_length_cm", y="sepal_length_cm", ci=None, height=6)
     plt.xlabel("Pengulin")
     plt.ylabel("Dodo")
     plt.xlim(0,8)
     plt.title("Scatterplots with regression line")
+
+# show and save the output
     plt.show()
+    plt.savefig("scatterplots_iris.png")
 
 # subsetting into different dataframes:
 #def subset(dataframe, list_of_species):
@@ -37,5 +43,4 @@ if __name__ == '__main__':
 #plt.ylabel("Sepal length in cm")
 #plt.legend()
 #plt.savefig("3-scatter.png")
-#
-#
+
