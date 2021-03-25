@@ -1,7 +1,6 @@
 #! /usr/bin/env python3
 
-if __name__ == '__main__':
-
+def iris_scatter():
 # import packages 
     import pandas as pd
     import matplotlib.pyplot as plt
@@ -19,10 +18,15 @@ if __name__ == '__main__':
     plt.ylabel("Dodo")
     plt.xlim(0,8)
     plt.title("Scatterplots with regression line")
-
+    
 # show and save the output
     plt.show()
     plt.savefig("scatterplots_iris.png")
+
+if __name__ == '__main__':
+    iris_scatter()
+
+iris_scatter
 
 # subsetting into different dataframes:
 #def subset(dataframe, list_of_species):
